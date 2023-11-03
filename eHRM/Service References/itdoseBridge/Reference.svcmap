@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="bad4ef29-3c7a-43de-a171-4b2d6257ede7" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://192.168.0.11/ITDoseChandanBridge/ITDoseDataServiceBridge.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ITDoseDataServiceBridge.disco" MetadataType="Disco" ID="fbf9cf05-73c9-45a8-a8b4-8c6d0942692b" SourceId="1" SourceUrl="http://192.168.0.11/ITDoseChandanBridge/ITDoseDataServiceBridge.svc?disco" />
+    <MetadataFile FileName="ITDoseDataServiceBridge.xsd" MetadataType="Schema" ID="e8cfc189-367a-4067-ba81-51d87f53690c" SourceId="1" SourceUrl="http://192.168.0.11/ITDoseChandanBridge/ITDoseDataServiceBridge.svc?xsd=xsd2" />
+    <MetadataFile FileName="ITDoseDataServiceBridge.wsdl" MetadataType="Wsdl" ID="64c2053c-9edc-4253-96d2-892c2560665f" SourceId="1" SourceUrl="http://192.168.0.11/ITDoseChandanBridge/ITDoseDataServiceBridge.svc?wsdl" />
+    <MetadataFile FileName="ITDoseDataServiceBridge1.xsd" MetadataType="Schema" ID="7b4378f1-b9d0-41cf-be39-33dd8acfebe4" SourceId="1" SourceUrl="http://192.168.0.11/ITDoseChandanBridge/ITDoseDataServiceBridge.svc?xsd=xsd1" />
+    <MetadataFile FileName="ITDoseDataServiceBridge2.xsd" MetadataType="Schema" ID="1cbfcfaa-9972-4b02-b751-1f1d27916e85" SourceId="1" SourceUrl="http://192.168.0.11/ITDoseChandanBridge/ITDoseDataServiceBridge.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

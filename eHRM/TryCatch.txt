@@ -1,0 +1,26 @@
+﻿            try
+            {
+                DialogResult res = MessageBox.Show("Do You want to Print", "ExPro Help", MessageBoxButtons.YesNo);
+            }
+             catch (Exception ex) { RadMessageBox.Show(ex.Message, "ExPro Help", MessageBoxButtons.YesNo, RadMessageIcon.Info); }
+				finally{Cursor.Current = Cursors.Default;}
+
+
+			try
+                {
+                    Cursor.Current = Cursors.WaitCursor;
+					 DialogResult res = MessageBox.Show("Do You want to Print", "ExPro Help", MessageBoxButtons.YesNo);
+                    _ds = GlobalUsage.cws.ReconcileMasterKeyId(out _result, GlobalUsage.gUnit_id, e.Item.Text);
+
+
+                }
+             catch (Exception ex) { RadMessageBox.Show(ex.Message, "ExPro Help", MessageBoxButtons.OK, RadMessageIcon.Info); }
+				finally{Cursor.Current = Cursors.Default;}
+
+
+				EXEC sp_resetstatus 'yourDBname';
+ALTER DATABASE yourDBname SET EMERGENCY
+DBCC checkdb('yourDBname')
+ALTER DATABASE yourDBname SET SINGLE_USER WITH ROLLBACK IMMEDIATE
+DBCC CheckDB ('yourDBname', REPAIR_ALLOW_DATA_LOSS)
+ALTER DATABASE yourDBname SET MULTI_USER

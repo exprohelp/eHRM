@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ITDoseDataServiceBridge" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="BasicHttpsBinding_IITDoseDataServiceBridge_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://192.168.0.11/ITDoseChandanBridge/ITDoseDataServiceBridge.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://192.168.0.11/ITDoseChandanBridge/ITDoseDataServiceBridge.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://192.168.0.11/ITDoseChandanBridge/ITDoseDataServiceBridge.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IITDoseDataServiceBridge_LIS_FillUnit_InputMessage">
+    <wsdl:part name="parameters" element="tns:LIS_FillUnit" />
+  </wsdl:message>
+  <wsdl:message name="IITDoseDataServiceBridge_LIS_FillUnit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LIS_FillUnitResponse" />
+  </wsdl:message>
+  <wsdl:message name="IITDoseDataServiceBridge_LIS_AmountOfTestPerformedByLab_InputMessage">
+    <wsdl:part name="parameters" element="tns:LIS_AmountOfTestPerformedByLab" />
+  </wsdl:message>
+  <wsdl:message name="IITDoseDataServiceBridge_LIS_AmountOfTestPerformedByLab_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LIS_AmountOfTestPerformedByLabResponse" />
+  </wsdl:message>
+  <wsdl:message name="IITDoseDataServiceBridge_LIS_ContractAnalysisOfUnit_InputMessage">
+    <wsdl:part name="parameters" element="tns:LIS_ContractAnalysisOfUnit" />
+  </wsdl:message>
+  <wsdl:message name="IITDoseDataServiceBridge_LIS_ContractAnalysisOfUnit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LIS_ContractAnalysisOfUnitResponse" />
+  </wsdl:message>
+  <wsdl:message name="IITDoseDataServiceBridge_LIS_ContractAnalysisItemWise_InputMessage">
+    <wsdl:part name="parameters" element="tns:LIS_ContractAnalysisItemWise" />
+  </wsdl:message>
+  <wsdl:message name="IITDoseDataServiceBridge_LIS_ContractAnalysisItemWise_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LIS_ContractAnalysisItemWiseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IITDoseDataServiceBridge_ExecuteDataset_InputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteDataset" />
+  </wsdl:message>
+  <wsdl:message name="IITDoseDataServiceBridge_ExecuteDataset_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteDatasetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IITDoseDataServiceBridge_ExecuteScalar_InputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteScalar" />
+  </wsdl:message>
+  <wsdl:message name="IITDoseDataServiceBridge_ExecuteScalar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteScalarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IITDoseDataServiceBridge_HIS_IPDValidation_InputMessage">
+    <wsdl:part name="parameters" element="tns:HIS_IPDValidation" />
+  </wsdl:message>
+  <wsdl:message name="IITDoseDataServiceBridge_HIS_IPDValidation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:HIS_IPDValidationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IITDoseDataServiceBridge_HIS_PaymentDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:HIS_PaymentDetail" />
+  </wsdl:message>
+  <wsdl:message name="IITDoseDataServiceBridge_HIS_PaymentDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:HIS_PaymentDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IITDoseDataServiceBridge_HIS_In_PatientDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:HIS_In_PatientDetail" />
+  </wsdl:message>
+  <wsdl:message name="IITDoseDataServiceBridge_HIS_In_PatientDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:HIS_In_PatientDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IITDoseDataServiceBridge_HIS_ConsolidateSale_InputMessage">
+    <wsdl:part name="parameters" element="tns:HIS_ConsolidateSale" />
+  </wsdl:message>
+  <wsdl:message name="IITDoseDataServiceBridge_HIS_ConsolidateSale_OutputMessage">
+    <wsdl:part name="parameters" element="tns:HIS_ConsolidateSaleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IITDoseDataServiceBridge_HIS_DataForTeleCaller_InputMessage">
+    <wsdl:part name="parameters" element="tns:HIS_DataForTeleCaller" />
+  </wsdl:message>
+  <wsdl:message name="IITDoseDataServiceBridge_HIS_DataForTeleCaller_OutputMessage">
+    <wsdl:part name="parameters" element="tns:HIS_DataForTeleCallerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IITDoseDataServiceBridge_NoDuseEmployee_InputMessage">
+    <wsdl:part name="parameters" element="tns:NoDuseEmployee" />
+  </wsdl:message>
+  <wsdl:message name="IITDoseDataServiceBridge_NoDuseEmployee_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NoDuseEmployeeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IITDoseDataServiceBridge">
+    <wsdl:operation name="LIS_FillUnit">
+      <wsdl:input wsaw:Action="http://tempuri.org/IITDoseDataServiceBridge/LIS_FillUnit" message="tns:IITDoseDataServiceBridge_LIS_FillUnit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IITDoseDataServiceBridge/LIS_FillUnitResponse" message="tns:IITDoseDataServiceBridge_LIS_FillUnit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LIS_AmountOfTestPerformedByLab">
+      <wsdl:input wsaw:Action="http://tempuri.org/IITDoseDataServiceBridge/LIS_AmountOfTestPerformedByLab" message="tns:IITDoseDataServiceBridge_LIS_AmountOfTestPerformedByLab_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IITDoseDataServiceBridge/LIS_AmountOfTestPerformedByLabResponse" message="tns:IITDoseDataServiceBridge_LIS_AmountOfTestPerformedByLab_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LIS_ContractAnalysisOfUnit">
+      <wsdl:input wsaw:Action="http://tempuri.org/IITDoseDataServiceBridge/LIS_ContractAnalysisOfUnit" message="tns:IITDoseDataServiceBridge_LIS_ContractAnalysisOfUnit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IITDoseDataServiceBridge/LIS_ContractAnalysisOfUnitResponse" message="tns:IITDoseDataServiceBridge_LIS_ContractAnalysisOfUnit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LIS_ContractAnalysisItemWise">
+      <wsdl:input wsaw:Action="http://tempuri.org/IITDoseDataServiceBridge/LIS_ContractAnalysisItemWise" message="tns:IITDoseDataServiceBridge_LIS_ContractAnalysisItemWise_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IITDoseDataServiceBridge/LIS_ContractAnalysisItemWiseResponse" message="tns:IITDoseDataServiceBridge_LIS_ContractAnalysisItemWise_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteDataset">
+      <wsdl:input wsaw:Action="http://tempuri.org/IITDoseDataServiceBridge/ExecuteDataset" message="tns:IITDoseDataServiceBridge_ExecuteDataset_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IITDoseDataServiceBridge/ExecuteDatasetResponse" message="tns:IITDoseDataServiceBridge_ExecuteDataset_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteScalar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IITDoseDataServiceBridge/ExecuteScalar" message="tns:IITDoseDataServiceBridge_ExecuteScalar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IITDoseDataServiceBridge/ExecuteScalarResponse" message="tns:IITDoseDataServiceBridge_ExecuteScalar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="HIS_IPDValidation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IITDoseDataServiceBridge/HIS_IPDValidation" message="tns:IITDoseDataServiceBridge_HIS_IPDValidation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IITDoseDataServiceBridge/HIS_IPDValidationResponse" message="tns:IITDoseDataServiceBridge_HIS_IPDValidation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="HIS_PaymentDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IITDoseDataServiceBridge/HIS_PaymentDetail" message="tns:IITDoseDataServiceBridge_HIS_PaymentDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IITDoseDataServiceBridge/HIS_PaymentDetailResponse" message="tns:IITDoseDataServiceBridge_HIS_PaymentDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="HIS_In_PatientDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IITDoseDataServiceBridge/HIS_In_PatientDetail" message="tns:IITDoseDataServiceBridge_HIS_In_PatientDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IITDoseDataServiceBridge/HIS_In_PatientDetailResponse" message="tns:IITDoseDataServiceBridge_HIS_In_PatientDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="HIS_ConsolidateSale">
+      <wsdl:input wsaw:Action="http://tempuri.org/IITDoseDataServiceBridge/HIS_ConsolidateSale" message="tns:IITDoseDataServiceBridge_HIS_ConsolidateSale_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IITDoseDataServiceBridge/HIS_ConsolidateSaleResponse" message="tns:IITDoseDataServiceBridge_HIS_ConsolidateSale_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="HIS_DataForTeleCaller">
+      <wsdl:input wsaw:Action="http://tempuri.org/IITDoseDataServiceBridge/HIS_DataForTeleCaller" message="tns:IITDoseDataServiceBridge_HIS_DataForTeleCaller_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IITDoseDataServiceBridge/HIS_DataForTeleCallerResponse" message="tns:IITDoseDataServiceBridge_HIS_DataForTeleCaller_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NoDuseEmployee">
+      <wsdl:input wsaw:Action="http://tempuri.org/IITDoseDataServiceBridge/NoDuseEmployee" message="tns:IITDoseDataServiceBridge_NoDuseEmployee_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IITDoseDataServiceBridge/NoDuseEmployeeResponse" message="tns:IITDoseDataServiceBridge_NoDuseEmployee_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IITDoseDataServiceBridge" type="tns:IITDoseDataServiceBridge">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="LIS_FillUnit">
+      <soap:operation soapAction="http://tempuri.org/IITDoseDataServiceBridge/LIS_FillUnit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LIS_AmountOfTestPerformedByLab">
+      <soap:operation soapAction="http://tempuri.org/IITDoseDataServiceBridge/LIS_AmountOfTestPerformedByLab" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LIS_ContractAnalysisOfUnit">
+      <soap:operation soapAction="http://tempuri.org/IITDoseDataServiceBridge/LIS_ContractAnalysisOfUnit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LIS_ContractAnalysisItemWise">
+      <soap:operation soapAction="http://tempuri.org/IITDoseDataServiceBridge/LIS_ContractAnalysisItemWise" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteDataset">
+      <soap:operation soapAction="http://tempuri.org/IITDoseDataServiceBridge/ExecuteDataset" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteScalar">
+      <soap:operation soapAction="http://tempuri.org/IITDoseDataServiceBridge/ExecuteScalar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HIS_IPDValidation">
+      <soap:operation soapAction="http://tempuri.org/IITDoseDataServiceBridge/HIS_IPDValidation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HIS_PaymentDetail">
+      <soap:operation soapAction="http://tempuri.org/IITDoseDataServiceBridge/HIS_PaymentDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HIS_In_PatientDetail">
+      <soap:operation soapAction="http://tempuri.org/IITDoseDataServiceBridge/HIS_In_PatientDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HIS_ConsolidateSale">
+      <soap:operation soapAction="http://tempuri.org/IITDoseDataServiceBridge/HIS_ConsolidateSale" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HIS_DataForTeleCaller">
+      <soap:operation soapAction="http://tempuri.org/IITDoseDataServiceBridge/HIS_DataForTeleCaller" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NoDuseEmployee">
+      <soap:operation soapAction="http://tempuri.org/IITDoseDataServiceBridge/NoDuseEmployee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpsBinding_IITDoseDataServiceBridge" type="tns:IITDoseDataServiceBridge">
+    <wsp:PolicyReference URI="#BasicHttpsBinding_IITDoseDataServiceBridge_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="LIS_FillUnit">
+      <soap:operation soapAction="http://tempuri.org/IITDoseDataServiceBridge/LIS_FillUnit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LIS_AmountOfTestPerformedByLab">
+      <soap:operation soapAction="http://tempuri.org/IITDoseDataServiceBridge/LIS_AmountOfTestPerformedByLab" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LIS_ContractAnalysisOfUnit">
+      <soap:operation soapAction="http://tempuri.org/IITDoseDataServiceBridge/LIS_ContractAnalysisOfUnit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LIS_ContractAnalysisItemWise">
+      <soap:operation soapAction="http://tempuri.org/IITDoseDataServiceBridge/LIS_ContractAnalysisItemWise" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteDataset">
+      <soap:operation soapAction="http://tempuri.org/IITDoseDataServiceBridge/ExecuteDataset" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteScalar">
+      <soap:operation soapAction="http://tempuri.org/IITDoseDataServiceBridge/ExecuteScalar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HIS_IPDValidation">
+      <soap:operation soapAction="http://tempuri.org/IITDoseDataServiceBridge/HIS_IPDValidation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HIS_PaymentDetail">
+      <soap:operation soapAction="http://tempuri.org/IITDoseDataServiceBridge/HIS_PaymentDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HIS_In_PatientDetail">
+      <soap:operation soapAction="http://tempuri.org/IITDoseDataServiceBridge/HIS_In_PatientDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HIS_ConsolidateSale">
+      <soap:operation soapAction="http://tempuri.org/IITDoseDataServiceBridge/HIS_ConsolidateSale" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HIS_DataForTeleCaller">
+      <soap:operation soapAction="http://tempuri.org/IITDoseDataServiceBridge/HIS_DataForTeleCaller" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NoDuseEmployee">
+      <soap:operation soapAction="http://tempuri.org/IITDoseDataServiceBridge/NoDuseEmployee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ITDoseDataServiceBridge">
+    <wsdl:port name="BasicHttpBinding_IITDoseDataServiceBridge" binding="tns:BasicHttpBinding_IITDoseDataServiceBridge">
+      <soap:address location="http://192.168.0.11/ITDoseChandanBridge/ITDoseDataServiceBridge.svc" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpsBinding_IITDoseDataServiceBridge" binding="tns:BasicHttpsBinding_IITDoseDataServiceBridge">
+      <soap:address location="https://lenovo-la0x1789/ITDoseChandanBridge/ITDoseDataServiceBridge.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

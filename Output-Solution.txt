@@ -1,0 +1,4 @@
+﻿C:\Accounts_Library\accounts_library\accounts_library.csproj : error  : The project file could not be loaded. Could not find a part of the path 'C:\Accounts_Library\accounts_library\accounts_library.csproj'.  C:\Accounts_Library\accounts_library\accounts_library.csproj
+
+C:\HRPrintingLibrary\HRPrintingLibrary.csproj : error  : The project file could not be loaded. Could not find a part of the path 'C:\HRPrintingLibrary\HRPrintingLibrary.csproj'.  C:\HRPrintingLibrary\HRPrintingLibrary.csproj
+
