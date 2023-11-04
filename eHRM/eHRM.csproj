@@ -55,6 +55,10 @@
     <ApplicationIcon>hrm.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="accounts_library, Version=2.0.2.53, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\accounts_library\bin\Debug\accounts_library.dll</HintPath>
+    </Reference>
     <Reference Include="ALVCS03CONTROLS">
       <HintPath>..\..\..\UPHealth\UPHealth\bin\Debug\ALVCS03CONTROLS.dll</HintPath>
     </Reference>
@@ -1028,12 +1032,6 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\rmAccounts\Accounts_webservice.wsdl" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\Accounts_Library\accounts_library\accounts_library.csproj">
-      <Project>{0754023f-3196-4f53-b9c6-71d9b30fc9cf}</Project>
-      <Name>accounts_library</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
