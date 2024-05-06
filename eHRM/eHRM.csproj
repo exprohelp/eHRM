@@ -348,6 +348,12 @@
     <Compile Include="cv\uc_CvUpload.Designer.cs">
       <DependentUpon>uc_CvUpload.cs</DependentUpon>
     </Compile>
+    <Compile Include="Doc\ucDocView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doc\ucDocView.Designer.cs">
+      <DependentUpon>ucDocView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Doc\uc_DocUpload.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -607,6 +613,12 @@
     <Compile Include="MasterForm.designer.cs">
       <DependentUpon>MasterForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Masters\Add_Department.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Masters\Add_Department.Designer.cs">
+      <DependentUpon>Add_Department.cs</DependentUpon>
+    </Compile>
     <Compile Include="Masters\Add_PostingArea.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -793,6 +805,9 @@
     <EmbeddedResource Include="cv\uc_CvUpload.resx">
       <DependentUpon>uc_CvUpload.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Doc\ucDocView.resx">
+      <DependentUpon>ucDocView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Doc\uc_DocUpload.resx">
       <DependentUpon>uc_DocUpload.cs</DependentUpon>
     </EmbeddedResource>
@@ -918,6 +933,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MasterForm.resx">
       <DependentUpon>MasterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Masters\Add_Department.resx">
+      <DependentUpon>Add_Department.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Masters\Add_PostingArea.resx">
       <DependentUpon>Add_PostingArea.cs</DependentUpon>

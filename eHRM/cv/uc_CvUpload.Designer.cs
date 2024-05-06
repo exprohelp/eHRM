@@ -67,6 +67,8 @@
             this.rdpDOB = new Telerik.WinControls.UI.RadDateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.radGroupBox2 = new Telerik.WinControls.UI.RadGroupBox();
+            this.txteMail = new Telerik.WinControls.UI.RadTextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.txtMobileNo = new Telerik.WinControls.UI.RadTextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.rbFemale = new System.Windows.Forms.RadioButton();
@@ -75,8 +77,6 @@
             this.btnAddType = new Telerik.WinControls.UI.RadButton();
             this.label9 = new System.Windows.Forms.Label();
             this.richTextRemarks = new System.Windows.Forms.RichTextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.txteMail = new Telerik.WinControls.UI.RadTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.txtApplicantName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chkExperienced)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtExprMth)).BeginInit();
@@ -92,10 +92,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.rdpDOB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox2)).BeginInit();
             this.radGroupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txteMail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMobileNo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnUpload)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAddType)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txteMail)).BeginInit();
             this.SuspendLayout();
             // 
             // cmbType
@@ -431,6 +431,27 @@
             this.radGroupBox2.Size = new System.Drawing.Size(455, 218);
             this.radGroupBox2.TabIndex = 24;
             // 
+            // txteMail
+            // 
+            this.txteMail.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
+            this.txteMail.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txteMail.Location = new System.Drawing.Point(57, 122);
+            this.txteMail.MaxLength = 100;
+            this.txteMail.Name = "txteMail";
+            this.txteMail.Size = new System.Drawing.Size(388, 23);
+            this.txteMail.TabIndex = 13;
+            ((Telerik.WinControls.UI.RadTextBoxElement)(this.txteMail.GetChildAt(0))).Text = "";
+            ((Telerik.WinControls.UI.RadTextBoxElement)(this.txteMail.GetChildAt(0))).Shape = this.roundRectShape1;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(7, 122);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(53, 20);
+            this.label11.TabIndex = 28;
+            this.label11.Text = "eMail :";
+            // 
             // txtMobileNo
             // 
             this.txtMobileNo.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -519,27 +540,6 @@
             this.richTextRemarks.TabIndex = 27;
             this.richTextRemarks.Text = "";
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(7, 122);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(53, 20);
-            this.label11.TabIndex = 28;
-            this.label11.Text = "eMail :";
-            // 
-            // txteMail
-            // 
-            this.txteMail.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
-            this.txteMail.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txteMail.Location = new System.Drawing.Point(57, 122);
-            this.txteMail.MaxLength = 100;
-            this.txteMail.Name = "txteMail";
-            this.txteMail.Size = new System.Drawing.Size(388, 23);
-            this.txteMail.TabIndex = 13;
-            ((Telerik.WinControls.UI.RadTextBoxElement)(this.txteMail.GetChildAt(0))).Text = "";
-            ((Telerik.WinControls.UI.RadTextBoxElement)(this.txteMail.GetChildAt(0))).Shape = this.roundRectShape1;
-            // 
             // uc_CvUpload
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -573,10 +573,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox2)).EndInit();
             this.radGroupBox2.ResumeLayout(false);
             this.radGroupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txteMail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMobileNo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnUpload)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAddType)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txteMail)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

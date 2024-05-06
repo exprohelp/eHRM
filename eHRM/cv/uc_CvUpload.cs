@@ -175,7 +175,7 @@ namespace eHRM.cv
         {
             string qry = "SELECT [cv_id], [cv_name], [cv_type], [mobileNo], [isExperienced], [exprYears], [remarks],";
             qry += "[isActive], [entryBy], [cr_date], [cvFilePath], [update_date], [updateBy],email ";
-            qry += "FROM[ExHrd].[dbo].[cv_master] where cast(cr_date as date) between '" + rdtFrom.Value.ToString("yyyy-MM-dd") + "' and '" + rdtTo.Value.ToString("yyyy-MM-dd") + "' and isActive = 'Y'";
+            qry += "FROM [ExHrd].[dbo].[cv_master] where cast(cr_date as date) between '" + rdtFrom.Value.ToString("yyyy-MM-dd") + "' and '" + rdtTo.Value.ToString("yyyy-MM-dd") + "' and isActive = 'Y'";
 
             _ds = GlobalUsage.hr_proxy.GetQueryResult(qry, "exhrd");
             rgv_info.DataSource = _ds.Tables[0];
@@ -206,9 +206,9 @@ namespace eHRM.cv
             finally { Cursor.Current = Cursors.Default; }
 
 
-            string qry = "SELECT [cv_id], [cv_name], [cv_type], [mobileNo], [isExperienced], [exprMonths], [remarks],";
+            string qry = "SELECT [cv_id], [cv_name], [cv_type], [mobileNo], [isExperienced], [exprYears], [remarks],";
             qry += "[isActive], [entryBy], [cr_date], [cvFilePath], [update_date], [updateBy] ";
-            qry += "FROM[ExHrd].[dbo].[cv_master] where cast(cr_date as date) between '" + rdtFrom.Value.ToString("yyyy-MM-dd") + "' and '" + rdtTo.Value.ToString("yyyy-MM-dd") + "' and isActive = 'Y'";
+            qry += "FROM [ExHrd].[dbo].[cv_master] where cast(cr_date as date) between '" + rdtFrom.Value.ToString("yyyy-MM-dd") + "' and '" + rdtTo.Value.ToString("yyyy-MM-dd") + "' and isActive = 'Y'";
 
             _ds = GlobalUsage.hr_proxy.GetQueryResult(qry, "exhrd");
             rgv_info.DataSource = _ds.Tables[0];

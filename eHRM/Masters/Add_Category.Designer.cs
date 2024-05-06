@@ -97,7 +97,6 @@
             // 
             // radTextBox1
             // 
-            this.radTextBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.radTextBox1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radTextBox1.Location = new System.Drawing.Point(-2, 4);
             this.radTextBox1.MaxLength = 50;

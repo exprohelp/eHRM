@@ -44,6 +44,7 @@
             this.radButtonElement4 = new Telerik.WinControls.UI.RadButtonElement();
             this.rbe_att_summarization = new Telerik.WinControls.UI.RadButtonElement();
             this.radRibbonBarButtonGroup15 = new Telerik.WinControls.UI.RadRibbonBarButtonGroup();
+            this.radButtonElement3 = new Telerik.WinControls.UI.RadButtonElement();
             this.rrb_menu = new Telerik.WinControls.UI.RadRibbonBar();
             this.ribbonTab1 = new Telerik.WinControls.UI.RibbonTab();
             this.radRibbonBarGroup4 = new Telerik.WinControls.UI.RadRibbonBarGroup();
@@ -94,8 +95,8 @@
             this.radButtonElement6 = new Telerik.WinControls.UI.RadButtonElement();
             this.radButtonElement7 = new Telerik.WinControls.UI.RadButtonElement();
             this.radRibbonBarButtonGroup21 = new Telerik.WinControls.UI.RadRibbonBarButtonGroup();
-            this.radButtonElement5 = new Telerik.WinControls.UI.RadButtonElement();
             this.rbeorg9 = new Telerik.WinControls.UI.RadButtonElement();
+            this.radButtonElement5 = new Telerik.WinControls.UI.RadButtonElement();
             this.radRibbonBarGroup3 = new Telerik.WinControls.UI.RadRibbonBarGroup();
             this.radRibbonBarButtonGroup17 = new Telerik.WinControls.UI.RadRibbonBarButtonGroup();
             this.radButtonElement8 = new Telerik.WinControls.UI.RadButtonElement();
@@ -150,6 +151,7 @@
             this.rbeCvCalls = new Telerik.WinControls.UI.RadButtonElement();
             this.radRibbonBarGroup14 = new Telerik.WinControls.UI.RadRibbonBarGroup();
             this.rbe_jd_documents = new Telerik.WinControls.UI.RadButtonElement();
+            this.rbeDocView = new Telerik.WinControls.UI.RadButtonElement();
             this.ribbonTab6 = new Telerik.WinControls.UI.RibbonTab();
             this.radRibbonBarGroup12 = new Telerik.WinControls.UI.RadRibbonBarGroup();
             this.radRibbonBarButtonGroup18 = new Telerik.WinControls.UI.RadRibbonBarButtonGroup();
@@ -159,9 +161,9 @@
             this.rbe_DrSignature = new Telerik.WinControls.UI.RadButtonElement();
             this.radRibbonBarButtonGroup20 = new Telerik.WinControls.UI.RadRibbonBarButtonGroup();
             this.rbePostingArea = new Telerik.WinControls.UI.RadButtonElement();
+            this.rbeDepartment = new Telerik.WinControls.UI.RadButtonElement();
             this.rbe_calculator = new Telerik.WinControls.UI.RadButtonElement();
             this.rbe_software = new Telerik.WinControls.UI.RadButtonElement();
-            this.radButtonElement3 = new Telerik.WinControls.UI.RadButtonElement();
             ((System.ComponentModel.ISupportInitialize)(this.radStatusStrip1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GbLoginBox)).BeginInit();
@@ -176,9 +178,9 @@
             // 
             // radStatusStrip1
             // 
-            this.radStatusStrip1.Location = new System.Drawing.Point(0, 537);
+            this.radStatusStrip1.Location = new System.Drawing.Point(0, 491);
             this.radStatusStrip1.Name = "radStatusStrip1";
-            this.radStatusStrip1.Size = new System.Drawing.Size(1215, 26);
+            this.radStatusStrip1.Size = new System.Drawing.Size(1145, 26);
             this.radStatusStrip1.SizingGrip = false;
             this.radStatusStrip1.TabIndex = 1;
             this.radStatusStrip1.Text = "radStatusStrip1";
@@ -189,7 +191,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 170);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1215, 367);
+            this.panel1.Size = new System.Drawing.Size(1145, 321);
             this.panel1.TabIndex = 2;
             // 
             // GbLoginBox
@@ -326,6 +328,11 @@
             this.radRibbonBarButtonGroup15.Name = "radRibbonBarButtonGroup15";
             this.radRibbonBarButtonGroup15.Orientation = System.Windows.Forms.Orientation.Vertical;
             // 
+            // radButtonElement3
+            // 
+            this.radButtonElement3.Name = "radButtonElement3";
+            this.radButtonElement3.Text = "Org. Documents";
+            // 
             // rrb_menu
             // 
             this.rrb_menu.CommandTabs.AddRange(new Telerik.WinControls.RadItem[] {
@@ -355,7 +362,7 @@
             // 
             // 
             this.rrb_menu.RootElement.AutoSizeMode = Telerik.WinControls.RadAutoSizeMode.WrapAroundChildren;
-            this.rrb_menu.Size = new System.Drawing.Size(1215, 170);
+            this.rrb_menu.Size = new System.Drawing.Size(1145, 170);
             this.rrb_menu.StartButtonImage = global::eHRM.Properties.Resources.hr_16;
             this.rrb_menu.TabIndex = 0;
             this.rrb_menu.Text = "main";
@@ -790,18 +797,19 @@
             this.radRibbonBarButtonGroup21.Name = "radRibbonBarButtonGroup21";
             this.radRibbonBarButtonGroup21.Orientation = System.Windows.Forms.Orientation.Vertical;
             // 
+            // rbeorg9
+            // 
+            this.rbeorg9.Name = "rbeorg9";
+            this.rbeorg9.ShowBorder = false;
+            this.rbeorg9.Text = "Create Org. Docs";
+            this.rbeorg9.Click += new System.EventHandler(this.radButtonElement9_Click);
+            // 
             // radButtonElement5
             // 
             this.radButtonElement5.Name = "radButtonElement5";
             this.radButtonElement5.ShowBorder = false;
             this.radButtonElement5.Text = "Org. Doc View";
             this.radButtonElement5.Click += new System.EventHandler(this.radButtonElement5_Click);
-            // 
-            // rbeorg9
-            // 
-            this.rbeorg9.Name = "rbeorg9";
-            this.rbeorg9.Text = "Create Org. Docs";
-            this.rbeorg9.Click += new System.EventHandler(this.radButtonElement9_Click);
             // 
             // radRibbonBarGroup3
             // 
@@ -1215,7 +1223,8 @@
             // radRibbonBarGroup14
             // 
             this.radRibbonBarGroup14.Items.AddRange(new Telerik.WinControls.RadItem[] {
-            this.rbe_jd_documents});
+            this.rbe_jd_documents,
+            this.rbeDocView});
             this.radRibbonBarGroup14.Name = "radRibbonBarGroup14";
             this.radRibbonBarGroup14.Text = "Knowledge";
             // 
@@ -1224,6 +1233,12 @@
             this.rbe_jd_documents.Name = "rbe_jd_documents";
             this.rbe_jd_documents.Text = "Document";
             this.rbe_jd_documents.Click += new System.EventHandler(this.rbe_jd_documents_Click);
+            // 
+            // rbeDocView
+            // 
+            this.rbeDocView.Name = "rbeDocView";
+            this.rbeDocView.Text = "View";
+            this.rbeDocView.Click += new System.EventHandler(this.rbeDocView_Click);
             // 
             // ribbonTab6
             // 
@@ -1238,7 +1253,8 @@
             this.radRibbonBarGroup12.Items.AddRange(new Telerik.WinControls.RadItem[] {
             this.radRibbonBarButtonGroup18,
             this.rbe_DrSignature,
-            this.radRibbonBarButtonGroup20});
+            this.radRibbonBarButtonGroup20,
+            this.rbeDepartment});
             this.radRibbonBarGroup12.Name = "radRibbonBarGroup12";
             this.radRibbonBarGroup12.Text = "Master Tables";
             // 
@@ -1296,6 +1312,12 @@
             this.rbePostingArea.Text = "Posting Area";
             this.rbePostingArea.Click += new System.EventHandler(this.rbePostingArea_Click);
             // 
+            // rbeDepartment
+            // 
+            this.rbeDepartment.Name = "rbeDepartment";
+            this.rbeDepartment.Text = "Department";
+            this.rbeDepartment.Click += new System.EventHandler(this.rbeDepartment_Click);
+            // 
             // rbe_calculator
             // 
             this.rbe_calculator.Image = global::eHRM.Properties.Resources.calculator_16;
@@ -1316,16 +1338,11 @@
             this.rbe_software.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.rbe_software.Click += new System.EventHandler(this.rbe_software_Click);
             // 
-            // radButtonElement3
-            // 
-            this.radButtonElement3.Name = "radButtonElement3";
-            this.radButtonElement3.Text = "Org. Documents";
-            // 
             // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1215, 563);
+            this.ClientSize = new System.Drawing.Size(1145, 517);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.radStatusStrip1);
             this.Controls.Add(this.rrb_menu);
@@ -1488,5 +1505,7 @@
         private Telerik.WinControls.UI.RadButtonElement radButtonElement5;
         private Telerik.WinControls.UI.RadButtonElement rbeorg9;
         private Telerik.WinControls.UI.RadRibbonBarButtonGroup radRibbonBarButtonGroup21;
+        private Telerik.WinControls.UI.RadButtonElement rbeDepartment;
+        private Telerik.WinControls.UI.RadButtonElement rbeDocView;
     }
 }

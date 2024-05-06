@@ -286,7 +286,7 @@
             this.rdTo.Size = new System.Drawing.Size(106, 25);
             this.rdTo.TabIndex = 6;
             this.rdTo.TabStop = false;
-            this.rdTo.Text = "23/11/2021";
+            this.rdTo.Text = "23-11-2021";
             this.rdTo.Value = new System.DateTime(2021, 11, 23, 16, 58, 51, 594);
             // 
             // label3
@@ -307,7 +307,7 @@
             this.rdp_from.Size = new System.Drawing.Size(106, 25);
             this.rdp_from.TabIndex = 0;
             this.rdp_from.TabStop = false;
-            this.rdp_from.Text = "23/11/2021";
+            this.rdp_from.Text = "23-11-2021";
             this.rdp_from.Value = new System.DateTime(2021, 11, 23, 16, 58, 51, 594);
             this.rdp_from.Leave += new System.EventHandler(this.rdp_from_Leave);
             // 

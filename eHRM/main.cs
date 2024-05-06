@@ -605,5 +605,19 @@ namespace eHRM
         {
             OpenControl(new Employee.StaffOrgDocs(), "Orignal Document Information View");
         }
+
+        private void rbeDepartment_Click(object sender, EventArgs e)
+        {
+            Cursor.Current = Cursors.WaitCursor;
+            openForm(new Masters.Add_Department());
+            Cursor.Current = Cursors.Default;
+        }
+
+        private void rbeDocView_Click(object sender, EventArgs e)
+        {
+            Cursor.Current = Cursors.WaitCursor;
+            openForm(new Doc.ucDocView());
+            Cursor.Current = Cursors.Default;
+        }
     }
 }

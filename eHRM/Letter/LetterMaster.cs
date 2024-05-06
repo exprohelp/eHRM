@@ -2661,7 +2661,7 @@ namespace eHRM.Letter
 
             tr = new TableRow();
             tr.Height = 20;
-            Cell = GetSalaryCell("On behalf of the company, I am pleased to offer you an appointment in our organization as ", dr["t_designation"].ToString(), dr["issue_date"].ToString() + ".", 110, FontWeights.Normal, new Telerik.WinControls.RichTextEditor.UI.FontFamily("Arial Narrow"), Colors.Black, 11, 2, Telerik.WinForms.Documents.Layout.RadTextAlignment.Left, RadVerticalAlignment.Center);
+            Cell = GetSalaryCell("On behalf of the company, I am pleased to formally offer you the position of ", dr["t_designation"].ToString(), dr["issue_date"].ToString() + ".", 110, FontWeights.Normal, new Telerik.WinControls.RichTextEditor.UI.FontFamily("Arial Narrow"), Colors.Black, 11, 2, Telerik.WinForms.Documents.Layout.RadTextAlignment.Left, RadVerticalAlignment.Center);
             tr.Cells.Add(Cell);
             table.Rows.Add(tr);
 
@@ -2866,7 +2866,7 @@ namespace eHRM.Letter
             table.Rows.Add(tr);
 
             tr = new TableRow();
-            Cell = GetSalaryCell("On behalf of the company, I am pleased to offer you an appointment in our organization as ", dr["t_designation"].ToString(), dr["issue_date"].ToString() + ".", 110, FontWeights.Normal, new Telerik.WinControls.RichTextEditor.UI.FontFamily("Arial Narrow"), Colors.Black, 11, 2, Telerik.WinForms.Documents.Layout.RadTextAlignment.Left, RadVerticalAlignment.Center);
+            Cell = GetSalaryCell("On behalf of the company, I am pleased to formally offer you the position of ", dr["t_designation"].ToString(), dr["issue_date"].ToString() + ".", 110, FontWeights.Normal, new Telerik.WinControls.RichTextEditor.UI.FontFamily("Arial Narrow"), Colors.Black, 11, 2, Telerik.WinForms.Documents.Layout.RadTextAlignment.Left, RadVerticalAlignment.Center);
             tr.Cells.Add(Cell);
             table.Rows.Add(tr);
 

@@ -197,12 +197,15 @@ namespace eHRM.Employee
                 string hrRemark = txtHRemark.Text;
                 string section = ddlSection.Text;
                 string postingArea = ddlPostingArea.Text;
+                string deptID = ddlSection.SelectedValue.ToString();
                 string serv_charge_flag = "N";
                 _esiFlag = "N";
                 //Fourth Page Variables
                 #region VALIDATION BLOCKS
                 if (ddlDivision.Text.Length <= 6)
                 { MessageBox.Show("Select Division Name"); return; }
+                if (deptID.ToUpper()=="SELECT")
+                { MessageBox.Show("Select Department Name"); return; }
                 if (EmpName.Trim().Length <= 2)
                 { MessageBox.Show("Employee Name should be proper"); return; }
                 if (rtb_perNumber.Text.Trim().Length <= 2)

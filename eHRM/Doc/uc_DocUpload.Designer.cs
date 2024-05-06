@@ -29,7 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition4 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn9 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn10 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn11 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn12 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn13 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewDateTimeColumn gridViewDateTimeColumn3 = new Telerik.WinControls.UI.GridViewDateTimeColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn14 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewDateTimeColumn gridViewDateTimeColumn4 = new Telerik.WinControls.UI.GridViewDateTimeColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn15 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn16 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition2 = new Telerik.WinControls.UI.TableViewDefinition();
             this.cmbType = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -49,9 +59,9 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.lblFileSize = new System.Windows.Forms.Label();
             this.radGroupBox2 = new Telerik.WinControls.UI.RadGroupBox();
-            this.btnAddType = new Telerik.WinControls.UI.RadButton();
             this.richTextRemarks = new System.Windows.Forms.RichTextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.btnAddType = new Telerik.WinControls.UI.RadButton();
             ((System.ComponentModel.ISupportInitialize)(this.txtApplicantName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdtFrom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdtTo)).BeginInit();
@@ -149,13 +159,85 @@
             // 
             // rgv_info
             // 
+            this.rgv_info.BackColor = System.Drawing.SystemColors.Control;
+            this.rgv_info.Cursor = System.Windows.Forms.Cursors.Default;
             this.rgv_info.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.rgv_info.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.rgv_info.ForeColor = System.Drawing.Color.Black;
+            this.rgv_info.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.rgv_info.Location = new System.Drawing.Point(2, 56);
             // 
             // 
             // 
-            this.rgv_info.MasterTemplate.ViewDefinition = tableViewDefinition4;
+            this.rgv_info.MasterTemplate.AllowAddNewRow = false;
+            gridViewTextBoxColumn9.EnableExpressionEditor = false;
+            gridViewTextBoxColumn9.FieldName = "autoid";
+            gridViewTextBoxColumn9.HeaderText = "autoid";
+            gridViewTextBoxColumn9.IsVisible = false;
+            gridViewTextBoxColumn9.Name = "autoid";
+            gridViewTextBoxColumn10.EnableExpressionEditor = false;
+            gridViewTextBoxColumn10.FieldName = "doc_type";
+            gridViewTextBoxColumn10.HeaderText = "Doc Type";
+            gridViewTextBoxColumn10.Name = "doc_type";
+            gridViewTextBoxColumn10.Width = 94;
+            gridViewTextBoxColumn11.EnableExpressionEditor = false;
+            gridViewTextBoxColumn11.FieldName = "docname";
+            gridViewTextBoxColumn11.HeaderText = "Name of Document";
+            gridViewTextBoxColumn11.Name = "docname";
+            gridViewTextBoxColumn11.Width = 175;
+            gridViewTextBoxColumn12.EnableExpressionEditor = false;
+            gridViewTextBoxColumn12.FieldName = "DocPath";
+            gridViewTextBoxColumn12.HeaderText = "DocPath";
+            gridViewTextBoxColumn12.IsVisible = false;
+            gridViewTextBoxColumn12.Name = "DocPath";
+            gridViewTextBoxColumn13.EnableExpressionEditor = false;
+            gridViewTextBoxColumn13.FieldName = "DocVirtualPath";
+            gridViewTextBoxColumn13.HeaderText = "DocVirtualPath";
+            gridViewTextBoxColumn13.IsVisible = false;
+            gridViewTextBoxColumn13.Name = "DocVirtualPath";
+            gridViewDateTimeColumn3.EnableExpressionEditor = false;
+            gridViewDateTimeColumn3.FieldName = "cr_date";
+            gridViewDateTimeColumn3.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            gridViewDateTimeColumn3.HeaderText = "Cr. Date";
+            gridViewDateTimeColumn3.Name = "cr_date";
+            gridViewDateTimeColumn3.Width = 187;
+            gridViewTextBoxColumn14.EnableExpressionEditor = false;
+            gridViewTextBoxColumn14.FieldName = "createdBy";
+            gridViewTextBoxColumn14.HeaderText = "Created By";
+            gridViewTextBoxColumn14.Name = "createdBy";
+            gridViewTextBoxColumn14.Width = 243;
+            gridViewDateTimeColumn4.EnableExpressionEditor = false;
+            gridViewDateTimeColumn4.FieldName = "updateDate";
+            gridViewDateTimeColumn4.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            gridViewDateTimeColumn4.HeaderText = "Update Date";
+            gridViewDateTimeColumn4.IsVisible = false;
+            gridViewDateTimeColumn4.Name = "updateDate";
+            gridViewDateTimeColumn4.Width = 88;
+            gridViewTextBoxColumn15.EnableExpressionEditor = false;
+            gridViewTextBoxColumn15.FieldName = "updateBy";
+            gridViewTextBoxColumn15.HeaderText = "updateBy";
+            gridViewTextBoxColumn15.IsVisible = false;
+            gridViewTextBoxColumn15.Name = "updateBy";
+            gridViewTextBoxColumn16.EnableExpressionEditor = false;
+            gridViewTextBoxColumn16.FieldName = "isActive";
+            gridViewTextBoxColumn16.HeaderText = "isActive";
+            gridViewTextBoxColumn16.Name = "isActive";
+            this.rgv_info.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
+            gridViewTextBoxColumn9,
+            gridViewTextBoxColumn10,
+            gridViewTextBoxColumn11,
+            gridViewTextBoxColumn12,
+            gridViewTextBoxColumn13,
+            gridViewDateTimeColumn3,
+            gridViewTextBoxColumn14,
+            gridViewDateTimeColumn4,
+            gridViewTextBoxColumn15,
+            gridViewTextBoxColumn16});
+            this.rgv_info.MasterTemplate.EnableGrouping = false;
+            this.rgv_info.MasterTemplate.ViewDefinition = tableViewDefinition2;
             this.rgv_info.Name = "rgv_info";
+            this.rgv_info.ReadOnly = true;
+            this.rgv_info.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.rgv_info.Size = new System.Drawing.Size(916, 265);
             this.rgv_info.TabIndex = 14;
             this.rgv_info.Text = "radGridView1";
@@ -185,6 +267,7 @@
             this.btnGo.Size = new System.Drawing.Size(30, 24);
             this.btnGo.TabIndex = 20;
             this.btnGo.Text = ">>";
+            this.btnGo.Click += new System.EventHandler(this.btnGo_Click);
             // 
             // btnGet
             // 
@@ -206,6 +289,7 @@
             this.btnUpload.Text = "Upload";
             this.btnUpload.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnUpload.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnUpload.Click += new System.EventHandler(this.btnUpload_Click);
             ((Telerik.WinControls.UI.RadButtonElement)(this.btnUpload.GetChildAt(0))).Image = global::eHRM.Properties.Resources.upload_Doc_16;
             ((Telerik.WinControls.UI.RadButtonElement)(this.btnUpload.GetChildAt(0))).TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             ((Telerik.WinControls.UI.RadButtonElement)(this.btnUpload.GetChildAt(0))).TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -266,16 +350,6 @@
             this.radGroupBox2.Size = new System.Drawing.Size(455, 236);
             this.radGroupBox2.TabIndex = 24;
             // 
-            // btnAddType
-            // 
-            this.btnAddType.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddType.Location = new System.Drawing.Point(407, 3);
-            this.btnAddType.Name = "btnAddType";
-            this.btnAddType.Size = new System.Drawing.Size(30, 24);
-            this.btnAddType.TabIndex = 25;
-            this.btnAddType.Text = "+";
-            this.btnAddType.Click += new System.EventHandler(this.btnAddType_Click);
-            // 
             // richTextRemarks
             // 
             this.richTextRemarks.Location = new System.Drawing.Point(11, 84);
@@ -293,6 +367,16 @@
             this.label9.Size = new System.Drawing.Size(85, 20);
             this.label9.TabIndex = 28;
             this.label9.Text = "Description";
+            // 
+            // btnAddType
+            // 
+            this.btnAddType.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddType.Location = new System.Drawing.Point(407, 3);
+            this.btnAddType.Name = "btnAddType";
+            this.btnAddType.Size = new System.Drawing.Size(30, 24);
+            this.btnAddType.TabIndex = 25;
+            this.btnAddType.Text = "+";
+            this.btnAddType.Click += new System.EventHandler(this.btnAddType_Click);
             // 
             // uc_DocUpload
             // 

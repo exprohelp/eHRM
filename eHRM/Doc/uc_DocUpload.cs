@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
+﻿using Newtonsoft.Json;
+using System;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
+using System.Net.Http;
 using System.Windows.Forms;
 using Telerik.WinControls;
-using System.IO;
 
 namespace eHRM.Doc
 {
@@ -30,6 +26,7 @@ namespace eHRM.Doc
             rdtFrom.Value = DateTime.Today;
             rdtTo.Value = DateTime.Today;
             loadTypeMaster();
+            FillDocGrid();
         }
 
         private void loadTypeMaster()
@@ -51,7 +48,7 @@ namespace eHRM.Doc
 
         private void btnGet_Click(object sender, EventArgs e)
         {
-            dlg.Filter = "Image files *.pdf;*.PDF";
+            dlg.Filter = "Image files *.pdf|*.PDF";
             if (dlg.ShowDialog() == DialogResult.OK) // Test result.
             {
                 FileInfo file = new FileInfo(dlg.FileName);
@@ -60,8 +57,8 @@ namespace eHRM.Doc
                 btnUpload.Enabled = true;
                 try
                 {
-                        _imgByte = File.ReadAllBytes(dlg.FileName);
-                        _Extension = "PDF";
+                    _imgByte = File.ReadAllBytes(dlg.FileName);
+                    _Extension = "PDF";
                 }
                 catch (IOException)
                 {
@@ -71,7 +68,7 @@ namespace eHRM.Doc
 
         private void chkExperienced_CheckStateChanged(object sender, EventArgs e)
         {
-          
+
 
         }
 
@@ -82,13 +79,74 @@ namespace eHRM.Doc
                 Cursor.Current = Cursors.WaitCursor;
 
 
-                string qry = "if not exists(select * from DOC_TypeMaster where doc_type='" + cmbType.Text.ToUpper()+"') ";
-                qry += "INSERT INTO [dbo].[DOC_TypeMaster]([doc_type],[login_id]) VALUES(dbo.ProperCase('" + cmbType.Text.ToUpper() + "'),'"+GlobalUsage.Login_id+"')";
+                string qry = "if not exists(select * from DOC_TypeMaster where doc_type='" + cmbType.Text.ToUpper() + "') ";
+                qry += "INSERT INTO [dbo].[DOC_TypeMaster]([doc_type],[login_id]) VALUES(dbo.ProperCase('" + cmbType.Text.ToUpper() + "'),'" + GlobalUsage.Login_id + "')";
                 GlobalUsage.hr_proxy.QueryExecute(qry, "ExHRD");
             }
             catch (Exception ex) { RadMessageBox.Show(ex.Message, "ExPro Help", MessageBoxButtons.OK, RadMessageIcon.Info); }
             finally { Cursor.Current = Cursors.Default; }
             loadTypeMaster();
+        }
+
+        private void btnUpload_Click(object sender, EventArgs e)
+        {
+            UploadDocument();
+        }
+        public void UploadDocument()
+        {
+            try
+            {
+                byte[] file_bytes = System.IO.File.ReadAllBytes(txtFilePath.Text);
+                HttpClient httpClient = new HttpClient();
+                MultipartFormDataContent form = new MultipartFormDataContent();
+
+                ipDocument doc = new ipDocument();
+                doc.DocumentId = "";
+                doc.DocType = cmbType.Text;
+                doc.DocName = txtApplicantName.Text;
+                doc.DocVirtualPath = "";
+                doc.DocPhysicalpath = "";
+                doc.loginId = GlobalUsage.Login_id;
+                doc.Logic = "Insert";
+
+                var myContent = JsonConvert.SerializeObject(doc);
+                form.Add(new StringContent(myContent));
+                form.Add(new ByteArrayContent(file_bytes, 0, file_bytes.Length));
+
+                string response = MISProxy.UploadDocumentByMultipart("Hrm/TrainingDocumentUpload", form);
+
+                if (response.Contains("Success"))
+                {
+                    NewEntry();
+                    FillDocGrid();
+                }
+            }
+            catch (Exception ex)
+            {
+                RadMessageBox.Show(ex.Message, "ExPro Help", MessageBoxButtons.OK, RadMessageIcon.Info);
+            }
+
+
+        }
+        private void NewEntry()
+        {
+            txtApplicantName.Text = "";
+        }
+        private void FillDocGrid()
+        {
+            string qry = "select autoId,doc_type,docname,DocPath,DocVirtualPath,cr_date,createdBy,updateDate,updateBy,isActive "; 
+                    qry+="from doc_master where cast(cr_date as date) = cast(getdate() as date);";
+
+            _ds = GlobalUsage.hr_proxy.GetQueryResult(qry, "ExHRD");
+            rgv_info.DataSource = _ds.Tables[0];
+        }
+
+        private void btnGo_Click(object sender, EventArgs e)
+        {
+            string qry = "select autoId,doc_type,docname,DocPath,DocVirtualPath,cr_date,createdBy,updateDate,updateBy,isActive ";
+            qry += "from doc_master where cast(cr_date as date) between '"+rdtFrom.Value.ToString("yyyy-MM-dd")+"' and '"+ rdtTo.Value.ToString("yyyy-MM-dd") + "';";
+            _ds = GlobalUsage.hr_proxy.GetQueryResult(qry, "ExHRD");
+            rgv_info.DataSource = _ds.Tables[0];
         }
     }
 }

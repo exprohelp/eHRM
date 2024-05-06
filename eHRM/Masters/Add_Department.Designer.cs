@@ -1,6 +1,6 @@
 ﻿namespace eHRM.Masters
 {
-    partial class Add_Designation
+    partial class Add_Department
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn1 = new Telerik.WinControls.UI.GridViewCommandColumn();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_Designation));
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn4 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn5 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn6 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn2 = new Telerik.WinControls.UI.GridViewCommandColumn();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_Department));
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition2 = new Telerik.WinControls.UI.TableViewDefinition();
             this.rgv_info = new Telerik.WinControls.UI.RadGridView();
             this.radTextBox1 = new Telerik.WinControls.UI.RadTextBox();
             this.btnAdd = new Telerik.WinControls.UI.RadButton();
@@ -58,35 +58,35 @@
             this.rgv_info.MasterTemplate.AllowAddNewRow = false;
             this.rgv_info.MasterTemplate.AllowColumnReorder = false;
             this.rgv_info.MasterTemplate.AllowRowResize = false;
-            gridViewTextBoxColumn1.EnableExpressionEditor = false;
-            gridViewTextBoxColumn1.FieldName = "autoid";
-            gridViewTextBoxColumn1.HeaderText = "column1";
-            gridViewTextBoxColumn1.IsVisible = false;
-            gridViewTextBoxColumn1.Name = "auto_id";
-            gridViewTextBoxColumn2.EnableExpressionEditor = false;
-            gridViewTextBoxColumn2.FieldName = "desig_Name";
-            gridViewTextBoxColumn2.HeaderText = "Designation";
-            gridViewTextBoxColumn2.Name = "desig_name";
-            gridViewTextBoxColumn2.Width = 348;
-            gridViewTextBoxColumn3.EnableExpressionEditor = false;
-            gridViewTextBoxColumn3.FieldName = "active_flag";
-            gridViewTextBoxColumn3.HeaderText = "Flag";
-            gridViewTextBoxColumn3.Name = "active_flag";
-            gridViewTextBoxColumn3.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            gridViewCommandColumn1.EnableExpressionEditor = false;
-            gridViewCommandColumn1.HeaderText = "-";
-            gridViewCommandColumn1.Image = ((System.Drawing.Image)(resources.GetObject("gridViewCommandColumn1.Image")));
-            gridViewCommandColumn1.Name = "column1";
-            gridViewCommandColumn1.Width = 25;
+            gridViewTextBoxColumn4.EnableExpressionEditor = false;
+            gridViewTextBoxColumn4.FieldName = "dept_id";
+            gridViewTextBoxColumn4.HeaderText = "DeptID";
+            gridViewTextBoxColumn4.IsVisible = false;
+            gridViewTextBoxColumn4.Name = "dept_id";
+            gridViewTextBoxColumn5.EnableExpressionEditor = false;
+            gridViewTextBoxColumn5.FieldName = "departmentname";
+            gridViewTextBoxColumn5.HeaderText = "Name of Department";
+            gridViewTextBoxColumn5.Name = "departmentname";
+            gridViewTextBoxColumn5.Width = 348;
+            gridViewTextBoxColumn6.EnableExpressionEditor = false;
+            gridViewTextBoxColumn6.FieldName = "isActive";
+            gridViewTextBoxColumn6.HeaderText = "Flag";
+            gridViewTextBoxColumn6.Name = "isActive";
+            gridViewTextBoxColumn6.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            gridViewCommandColumn2.EnableExpressionEditor = false;
+            gridViewCommandColumn2.HeaderText = "-";
+            gridViewCommandColumn2.Image = ((System.Drawing.Image)(resources.GetObject("gridViewCommandColumn2.Image")));
+            gridViewCommandColumn2.Name = "column1";
+            gridViewCommandColumn2.Width = 25;
             this.rgv_info.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn1,
-            gridViewTextBoxColumn2,
-            gridViewTextBoxColumn3,
-            gridViewCommandColumn1});
+            gridViewTextBoxColumn4,
+            gridViewTextBoxColumn5,
+            gridViewTextBoxColumn6,
+            gridViewCommandColumn2});
             this.rgv_info.MasterTemplate.EnableAlternatingRowColor = true;
             this.rgv_info.MasterTemplate.EnableFiltering = true;
             this.rgv_info.MasterTemplate.EnableGrouping = false;
-            this.rgv_info.MasterTemplate.ViewDefinition = tableViewDefinition1;
+            this.rgv_info.MasterTemplate.ViewDefinition = tableViewDefinition2;
             this.rgv_info.Name = "rgv_info";
             this.rgv_info.ReadOnly = true;
             this.rgv_info.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -113,7 +113,7 @@
             this.btnAdd.Text = "Add";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // Add_Designation
+            // Add_Department
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -122,15 +122,15 @@
             this.Controls.Add(this.radTextBox1);
             this.Controls.Add(this.rgv_info);
             this.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name = "Add_Designation";
+            this.Name = "Add_Department";
             // 
             // 
             // 
             this.RootElement.ApplyShapeToControl = true;
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Designation Master";
-            this.Load += new System.EventHandler(this.Add_Designation_Load);
+            this.Text = "Department Master";
+            this.Load += new System.EventHandler(this.Add_Department_Load);
             ((System.ComponentModel.ISupportInitialize)(this.rgv_info.MasterTemplate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rgv_info)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radTextBox1)).EndInit();
