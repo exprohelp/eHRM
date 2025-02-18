@@ -619,5 +619,10 @@ namespace eHRM
             openForm(new Doc.ucDocView());
             Cursor.Current = Cursors.Default;
         }
+
+        private void att_bio_Register_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

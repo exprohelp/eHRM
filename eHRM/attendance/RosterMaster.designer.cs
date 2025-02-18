@@ -28,27 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn1 = new Telerik.WinControls.UI.GridViewCommandColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn14 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn15 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn16 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn3 = new Telerik.WinControls.UI.GridViewCommandColumn();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RosterMaster));
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn4 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.Data.GroupDescriptor groupDescriptor1 = new Telerik.WinControls.Data.GroupDescriptor();
-            Telerik.WinControls.Data.SortDescriptor sortDescriptor1 = new Telerik.WinControls.Data.SortDescriptor();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn5 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn6 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn7 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn8 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition2 = new Telerik.WinControls.UI.TableViewDefinition();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn9 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn10 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn11 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn12 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn13 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn2 = new Telerik.WinControls.UI.GridViewCommandColumn();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition3 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn17 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.Data.GroupDescriptor groupDescriptor2 = new Telerik.WinControls.Data.GroupDescriptor();
+            Telerik.WinControls.Data.SortDescriptor sortDescriptor2 = new Telerik.WinControls.Data.SortDescriptor();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition4 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn18 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn19 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn20 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn21 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition5 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn22 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn23 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn24 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn25 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn26 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn4 = new Telerik.WinControls.UI.GridViewCommandColumn();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition6 = new Telerik.WinControls.UI.TableViewDefinition();
             this.dgEmpList = new Telerik.WinControls.UI.RadGridView();
             this.dtInputDate = new Telerik.WinControls.UI.RadDateTimePicker();
             this.label30 = new System.Windows.Forms.Label();
@@ -95,43 +95,43 @@
             this.dgEmpList.MasterTemplate.AllowEditRow = false;
             this.dgEmpList.MasterTemplate.AutoExpandGroups = true;
             this.dgEmpList.MasterTemplate.AutoGenerateColumns = false;
-            gridViewTextBoxColumn1.EnableExpressionEditor = false;
-            gridViewTextBoxColumn1.FieldName = "emp_code";
-            gridViewTextBoxColumn1.HeaderText = "Code";
-            gridViewTextBoxColumn1.Name = "emp_code";
-            gridViewTextBoxColumn1.Width = 72;
-            gridViewTextBoxColumn2.EnableExpressionEditor = false;
-            gridViewTextBoxColumn2.FieldName = "emp_name";
-            gridViewTextBoxColumn2.HeaderText = "Name";
-            gridViewTextBoxColumn2.HeaderTextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            gridViewTextBoxColumn2.Name = "emp_name";
-            gridViewTextBoxColumn2.Width = 184;
-            gridViewTextBoxColumn3.EnableExpressionEditor = false;
-            gridViewTextBoxColumn3.FieldName = "roster_flag";
-            gridViewTextBoxColumn3.HeaderText = "Roster";
-            gridViewTextBoxColumn3.Name = "roster_flag";
-            gridViewTextBoxColumn3.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            gridViewTextBoxColumn3.Width = 45;
-            gridViewCommandColumn1.EnableExpressionEditor = false;
-            gridViewCommandColumn1.Image = ((System.Drawing.Image)(resources.GetObject("gridViewCommandColumn1.Image")));
-            gridViewCommandColumn1.Name = "column1";
-            gridViewCommandColumn1.Width = 28;
-            gridViewTextBoxColumn4.EnableExpressionEditor = false;
-            gridViewTextBoxColumn4.FieldName = "designation";
-            gridViewTextBoxColumn4.Name = "designation";
+            gridViewTextBoxColumn14.EnableExpressionEditor = false;
+            gridViewTextBoxColumn14.FieldName = "emp_code";
+            gridViewTextBoxColumn14.HeaderText = "Code";
+            gridViewTextBoxColumn14.Name = "emp_code";
+            gridViewTextBoxColumn14.Width = 72;
+            gridViewTextBoxColumn15.EnableExpressionEditor = false;
+            gridViewTextBoxColumn15.FieldName = "emp_name";
+            gridViewTextBoxColumn15.HeaderText = "Name";
+            gridViewTextBoxColumn15.HeaderTextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            gridViewTextBoxColumn15.Name = "emp_name";
+            gridViewTextBoxColumn15.Width = 184;
+            gridViewTextBoxColumn16.EnableExpressionEditor = false;
+            gridViewTextBoxColumn16.FieldName = "roster_flag";
+            gridViewTextBoxColumn16.HeaderText = "Roster";
+            gridViewTextBoxColumn16.Name = "roster_flag";
+            gridViewTextBoxColumn16.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            gridViewTextBoxColumn16.Width = 45;
+            gridViewCommandColumn3.EnableExpressionEditor = false;
+            gridViewCommandColumn3.Image = ((System.Drawing.Image)(resources.GetObject("gridViewCommandColumn3.Image")));
+            gridViewCommandColumn3.Name = "column1";
+            gridViewCommandColumn3.Width = 28;
+            gridViewTextBoxColumn17.EnableExpressionEditor = false;
+            gridViewTextBoxColumn17.FieldName = "designation";
+            gridViewTextBoxColumn17.Name = "designation";
             this.dgEmpList.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn1,
-            gridViewTextBoxColumn2,
-            gridViewTextBoxColumn3,
-            gridViewCommandColumn1,
-            gridViewTextBoxColumn4});
+            gridViewTextBoxColumn14,
+            gridViewTextBoxColumn15,
+            gridViewTextBoxColumn16,
+            gridViewCommandColumn3,
+            gridViewTextBoxColumn17});
             this.dgEmpList.MasterTemplate.EnableFiltering = true;
-            sortDescriptor1.PropertyName = "designation";
-            groupDescriptor1.GroupNames.AddRange(new Telerik.WinControls.Data.SortDescriptor[] {
-            sortDescriptor1});
+            sortDescriptor2.PropertyName = "designation";
+            groupDescriptor2.GroupNames.AddRange(new Telerik.WinControls.Data.SortDescriptor[] {
+            sortDescriptor2});
             this.dgEmpList.MasterTemplate.GroupDescriptors.AddRange(new Telerik.WinControls.Data.GroupDescriptor[] {
-            groupDescriptor1});
-            this.dgEmpList.MasterTemplate.ViewDefinition = tableViewDefinition1;
+            groupDescriptor2});
+            this.dgEmpList.MasterTemplate.ViewDefinition = tableViewDefinition4;
             this.dgEmpList.Name = "dgEmpList";
             this.dgEmpList.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dgEmpList.Size = new System.Drawing.Size(392, 535);
@@ -169,7 +169,7 @@
             this.radPageView1.DefaultPage = this.radPageViewPage1;
             this.radPageView1.Location = new System.Drawing.Point(402, 5);
             this.radPageView1.Name = "radPageView1";
-            this.radPageView1.SelectedPage = this.radPageViewPage1;
+            this.radPageView1.SelectedPage = this.radPageViewPage2;
             this.radPageView1.Size = new System.Drawing.Size(704, 540);
             this.radPageView1.TabIndex = 93;
             this.radPageView1.Text = "radPageView1";
@@ -233,35 +233,35 @@
             this.dgRoster.MasterTemplate.AllowAddNewRow = false;
             this.dgRoster.MasterTemplate.AllowDeleteRow = false;
             this.dgRoster.MasterTemplate.AllowEditRow = false;
-            gridViewTextBoxColumn5.EnableExpressionEditor = false;
-            gridViewTextBoxColumn5.FieldName = "att_date";
-            gridViewTextBoxColumn5.HeaderText = "Att Date";
-            gridViewTextBoxColumn5.Name = "att_date";
-            gridViewTextBoxColumn5.Width = 105;
-            gridViewTextBoxColumn6.EnableExpressionEditor = false;
-            gridViewTextBoxColumn6.FieldName = "shift_info";
-            gridViewTextBoxColumn6.HeaderText = "Shift Info";
-            gridViewTextBoxColumn6.HeaderTextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            gridViewTextBoxColumn6.Name = "shift_info";
-            gridViewTextBoxColumn6.Width = 117;
-            gridViewTextBoxColumn7.EnableExpressionEditor = false;
-            gridViewTextBoxColumn7.FieldName = "dayname";
-            gridViewTextBoxColumn7.HeaderText = "dayname";
-            gridViewTextBoxColumn7.HeaderTextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            gridViewTextBoxColumn7.Name = "dayname";
-            gridViewTextBoxColumn7.Width = 83;
-            gridViewTextBoxColumn8.EnableExpressionEditor = false;
-            gridViewTextBoxColumn8.FieldName = "att_status";
-            gridViewTextBoxColumn8.HeaderText = "Status";
-            gridViewTextBoxColumn8.HeaderTextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            gridViewTextBoxColumn8.Name = "att_status";
-            gridViewTextBoxColumn8.Width = 330;
+            gridViewTextBoxColumn18.EnableExpressionEditor = false;
+            gridViewTextBoxColumn18.FieldName = "att_date";
+            gridViewTextBoxColumn18.HeaderText = "Att Date";
+            gridViewTextBoxColumn18.Name = "att_date";
+            gridViewTextBoxColumn18.Width = 105;
+            gridViewTextBoxColumn19.EnableExpressionEditor = false;
+            gridViewTextBoxColumn19.FieldName = "shift_info";
+            gridViewTextBoxColumn19.HeaderText = "Shift Info";
+            gridViewTextBoxColumn19.HeaderTextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            gridViewTextBoxColumn19.Name = "shift_info";
+            gridViewTextBoxColumn19.Width = 117;
+            gridViewTextBoxColumn20.EnableExpressionEditor = false;
+            gridViewTextBoxColumn20.FieldName = "dayname";
+            gridViewTextBoxColumn20.HeaderText = "dayname";
+            gridViewTextBoxColumn20.HeaderTextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            gridViewTextBoxColumn20.Name = "dayname";
+            gridViewTextBoxColumn20.Width = 83;
+            gridViewTextBoxColumn21.EnableExpressionEditor = false;
+            gridViewTextBoxColumn21.FieldName = "att_status";
+            gridViewTextBoxColumn21.HeaderText = "Status";
+            gridViewTextBoxColumn21.HeaderTextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            gridViewTextBoxColumn21.Name = "att_status";
+            gridViewTextBoxColumn21.Width = 330;
             this.dgRoster.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn5,
-            gridViewTextBoxColumn6,
-            gridViewTextBoxColumn7,
-            gridViewTextBoxColumn8});
-            this.dgRoster.MasterTemplate.ViewDefinition = tableViewDefinition2;
+            gridViewTextBoxColumn18,
+            gridViewTextBoxColumn19,
+            gridViewTextBoxColumn20,
+            gridViewTextBoxColumn21});
+            this.dgRoster.MasterTemplate.ViewDefinition = tableViewDefinition5;
             this.dgRoster.Name = "dgRoster";
             this.dgRoster.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dgRoster.ShowGroupPanel = false;
@@ -292,46 +292,46 @@
             this.dgShift.MasterTemplate.AllowAddNewRow = false;
             this.dgShift.MasterTemplate.AllowDeleteRow = false;
             this.dgShift.MasterTemplate.AllowEditRow = false;
-            gridViewTextBoxColumn9.EnableExpressionEditor = false;
-            gridViewTextBoxColumn9.FieldName = "inp_date";
-            gridViewTextBoxColumn9.HeaderText = "Shit Date";
-            gridViewTextBoxColumn9.HeaderTextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            gridViewTextBoxColumn9.Name = "inp_date";
-            gridViewTextBoxColumn9.Width = 71;
-            gridViewTextBoxColumn10.EnableExpressionEditor = false;
-            gridViewTextBoxColumn10.FieldName = "InShift";
-            gridViewTextBoxColumn10.HeaderText = "InShift";
-            gridViewTextBoxColumn10.Name = "InShift";
-            gridViewTextBoxColumn10.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            gridViewTextBoxColumn10.Width = 78;
-            gridViewTextBoxColumn11.EnableExpressionEditor = false;
-            gridViewTextBoxColumn11.FieldName = "OutShift";
-            gridViewTextBoxColumn11.HeaderText = "OutShift";
-            gridViewTextBoxColumn11.Name = "OutShift";
-            gridViewTextBoxColumn11.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            gridViewTextBoxColumn11.Width = 78;
-            gridViewTextBoxColumn12.EnableExpressionEditor = false;
-            gridViewTextBoxColumn12.FieldName = "duty_break";
-            gridViewTextBoxColumn12.HeaderText = "Duty Break";
-            gridViewTextBoxColumn12.Name = "duty_break";
-            gridViewTextBoxColumn12.Width = 121;
-            gridViewTextBoxColumn13.EnableExpressionEditor = false;
-            gridViewTextBoxColumn13.FieldName = "auto_id";
-            gridViewTextBoxColumn13.HeaderText = "column1";
-            gridViewTextBoxColumn13.IsVisible = false;
-            gridViewTextBoxColumn13.Name = "auto_id";
-            gridViewCommandColumn2.EnableExpressionEditor = false;
-            gridViewCommandColumn2.Image = ((System.Drawing.Image)(resources.GetObject("gridViewCommandColumn2.Image")));
-            gridViewCommandColumn2.Name = "column1";
-            gridViewCommandColumn2.Width = 25;
+            gridViewTextBoxColumn22.EnableExpressionEditor = false;
+            gridViewTextBoxColumn22.FieldName = "inp_date";
+            gridViewTextBoxColumn22.HeaderText = "Shit Date";
+            gridViewTextBoxColumn22.HeaderTextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            gridViewTextBoxColumn22.Name = "inp_date";
+            gridViewTextBoxColumn22.Width = 71;
+            gridViewTextBoxColumn23.EnableExpressionEditor = false;
+            gridViewTextBoxColumn23.FieldName = "InShift";
+            gridViewTextBoxColumn23.HeaderText = "InShift";
+            gridViewTextBoxColumn23.Name = "InShift";
+            gridViewTextBoxColumn23.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            gridViewTextBoxColumn23.Width = 78;
+            gridViewTextBoxColumn24.EnableExpressionEditor = false;
+            gridViewTextBoxColumn24.FieldName = "OutShift";
+            gridViewTextBoxColumn24.HeaderText = "OutShift";
+            gridViewTextBoxColumn24.Name = "OutShift";
+            gridViewTextBoxColumn24.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            gridViewTextBoxColumn24.Width = 78;
+            gridViewTextBoxColumn25.EnableExpressionEditor = false;
+            gridViewTextBoxColumn25.FieldName = "duty_break";
+            gridViewTextBoxColumn25.HeaderText = "Duty Break";
+            gridViewTextBoxColumn25.Name = "duty_break";
+            gridViewTextBoxColumn25.Width = 121;
+            gridViewTextBoxColumn26.EnableExpressionEditor = false;
+            gridViewTextBoxColumn26.FieldName = "auto_id";
+            gridViewTextBoxColumn26.HeaderText = "column1";
+            gridViewTextBoxColumn26.IsVisible = false;
+            gridViewTextBoxColumn26.Name = "auto_id";
+            gridViewCommandColumn4.EnableExpressionEditor = false;
+            gridViewCommandColumn4.Image = ((System.Drawing.Image)(resources.GetObject("gridViewCommandColumn4.Image")));
+            gridViewCommandColumn4.Name = "column1";
+            gridViewCommandColumn4.Width = 25;
             this.dgShift.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn9,
-            gridViewTextBoxColumn10,
-            gridViewTextBoxColumn11,
-            gridViewTextBoxColumn12,
-            gridViewTextBoxColumn13,
-            gridViewCommandColumn2});
-            this.dgShift.MasterTemplate.ViewDefinition = tableViewDefinition3;
+            gridViewTextBoxColumn22,
+            gridViewTextBoxColumn23,
+            gridViewTextBoxColumn24,
+            gridViewTextBoxColumn25,
+            gridViewTextBoxColumn26,
+            gridViewCommandColumn4});
+            this.dgShift.MasterTemplate.ViewDefinition = tableViewDefinition6;
             this.dgShift.Name = "dgShift";
             this.dgShift.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dgShift.ShowGroupPanel = false;

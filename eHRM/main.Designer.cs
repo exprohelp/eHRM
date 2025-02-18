@@ -407,6 +407,7 @@
             this.att_bio_Register.Name = "att_bio_Register";
             this.att_bio_Register.Text = "Register";
             this.att_bio_Register.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.att_bio_Register.Click += new System.EventHandler(this.att_bio_Register_Click);
             // 
             // rbe_att_correction
             // 

@@ -58,6 +58,7 @@ namespace eHRM.Roster
                 string qry = "execute pRosterOffManagement '" + dtpDate.Value.ToString("yyyy-MM-dd") + "','GetData','-','-','-','" + GlobalUsage.Login_id + "';";
                 
                 ds=GlobalUsage.hr_proxy.GetQueryResult(qry, "ExHRD");
+
                 if(ds.Tables[0].Rows.Count>0)
                 {
                     DialogResult res = MessageBox.Show("Do You want to Regenerate", "ExPro Help", MessageBoxButtons.YesNo);

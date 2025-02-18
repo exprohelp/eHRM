@@ -196,7 +196,7 @@
             this.radPageView1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radPageView1.Location = new System.Drawing.Point(504, 4);
             this.radPageView1.Name = "radPageView1";
-            this.radPageView1.SelectedPage = this.rpv_summary;
+            this.radPageView1.SelectedPage = this.rpv_LetterInfo;
             this.radPageView1.Size = new System.Drawing.Size(713, 514);
             this.radPageView1.TabIndex = 2;
             this.radPageView1.Text = "radPageView1";

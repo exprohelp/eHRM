@@ -62,12 +62,12 @@
             this.radPageView1 = new Telerik.WinControls.UI.RadPageView();
             this.rpvpLoanProcess = new Telerik.WinControls.UI.RadPageViewPage();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnLoanRegister = new Telerik.WinControls.UI.RadButton();
             this.rpvpLoanRegister = new Telerik.WinControls.UI.RadPageViewPage();
             this.label2 = new System.Windows.Forms.Label();
             this.radDropDownList1 = new Telerik.WinControls.UI.RadDropDownList();
             this.btnGetRegister = new Telerik.WinControls.UI.RadButton();
             this.rgvReport = new Telerik.WinControls.UI.RadGridView();
-            this.btnLoanRegister = new Telerik.WinControls.UI.RadButton();
             this.btnXL = new Telerik.WinControls.UI.RadButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgLoanMaster)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgLoanMaster.MasterTemplate)).BeginInit();
@@ -81,12 +81,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.radPageView1)).BeginInit();
             this.radPageView1.SuspendLayout();
             this.rpvpLoanProcess.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLoanRegister)).BeginInit();
             this.rpvpLoanRegister.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radDropDownList1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnGetRegister)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rgvReport)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rgvReport.MasterTemplate)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnLoanRegister)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnXL)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
@@ -290,7 +290,7 @@
             this.radPageView1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radPageView1.Location = new System.Drawing.Point(0, 0);
             this.radPageView1.Name = "radPageView1";
-            this.radPageView1.SelectedPage = this.rpvpLoanRegister;
+            this.radPageView1.SelectedPage = this.rpvpLoanProcess;
             this.radPageView1.Size = new System.Drawing.Size(1151, 608);
             this.radPageView1.TabIndex = 2;
             this.radPageView1.Text = "radPageView1";
@@ -305,7 +305,7 @@
             this.rpvpLoanProcess.Controls.Add(this.btnCloseLoan);
             this.rpvpLoanProcess.Controls.Add(this.ddlReportType);
             this.rpvpLoanProcess.Controls.Add(this.btnLoanRegister);
-            this.rpvpLoanProcess.ItemSize = new System.Drawing.SizeF(102F, 30F);
+            this.rpvpLoanProcess.ItemSize = new System.Drawing.SizeF(106F, 34F);
             this.rpvpLoanProcess.Location = new System.Drawing.Point(10, 43);
             this.rpvpLoanProcess.Name = "rpvpLoanProcess";
             this.rpvpLoanProcess.Size = new System.Drawing.Size(1130, 554);
@@ -320,6 +320,18 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "Select Option";
             // 
+            // btnLoanRegister
+            // 
+            this.btnLoanRegister.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.btnLoanRegister.Image = global::eHRM.Properties.Resources.export_excel;
+            this.btnLoanRegister.Location = new System.Drawing.Point(354, 4);
+            this.btnLoanRegister.Name = "btnLoanRegister";
+            this.btnLoanRegister.Size = new System.Drawing.Size(116, 38);
+            this.btnLoanRegister.TabIndex = 5;
+            this.btnLoanRegister.Text = "Loan Register";
+            this.btnLoanRegister.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLoanRegister.Click += new System.EventHandler(this.btnLoanRegister_Click);
+            // 
             // rpvpLoanRegister
             // 
             this.rpvpLoanRegister.Controls.Add(this.label2);
@@ -327,10 +339,10 @@
             this.rpvpLoanRegister.Controls.Add(this.btnGetRegister);
             this.rpvpLoanRegister.Controls.Add(this.rgvReport);
             this.rpvpLoanRegister.Controls.Add(this.btnXL);
-            this.rpvpLoanRegister.ItemSize = new System.Drawing.SizeF(106F, 30F);
-            this.rpvpLoanRegister.Location = new System.Drawing.Point(10, 39);
+            this.rpvpLoanRegister.ItemSize = new System.Drawing.SizeF(110F, 34F);
+            this.rpvpLoanRegister.Location = new System.Drawing.Point(10, 43);
             this.rpvpLoanRegister.Name = "rpvpLoanRegister";
-            this.rpvpLoanRegister.Size = new System.Drawing.Size(1130, 558);
+            this.rpvpLoanRegister.Size = new System.Drawing.Size(1130, 554);
             this.rpvpLoanRegister.Text = "Loan Register";
             // 
             // label2
@@ -371,7 +383,7 @@
             // rgvReport
             // 
             this.rgvReport.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.rgvReport.Location = new System.Drawing.Point(0, 60);
+            this.rgvReport.Location = new System.Drawing.Point(0, 56);
             // 
             // 
             // 
@@ -380,18 +392,6 @@
             this.rgvReport.Size = new System.Drawing.Size(1130, 498);
             this.rgvReport.TabIndex = 0;
             this.rgvReport.Text = "radGridView1";
-            // 
-            // btnLoanRegister
-            // 
-            this.btnLoanRegister.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.btnLoanRegister.Image = global::eHRM.Properties.Resources.export_excel;
-            this.btnLoanRegister.Location = new System.Drawing.Point(354, 4);
-            this.btnLoanRegister.Name = "btnLoanRegister";
-            this.btnLoanRegister.Size = new System.Drawing.Size(116, 38);
-            this.btnLoanRegister.TabIndex = 5;
-            this.btnLoanRegister.Text = "Loan Register";
-            this.btnLoanRegister.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLoanRegister.Click += new System.EventHandler(this.btnLoanRegister_Click);
             // 
             // btnXL
             // 
@@ -434,13 +434,13 @@
             this.radPageView1.ResumeLayout(false);
             this.rpvpLoanProcess.ResumeLayout(false);
             this.rpvpLoanProcess.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLoanRegister)).EndInit();
             this.rpvpLoanRegister.ResumeLayout(false);
             this.rpvpLoanRegister.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radDropDownList1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnGetRegister)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rgvReport.MasterTemplate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rgvReport)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnLoanRegister)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnXL)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);

@@ -224,7 +224,7 @@
             this.dtInputDate.Size = new System.Drawing.Size(95, 21);
             this.dtInputDate.TabIndex = 90;
             this.dtInputDate.TabStop = false;
-            this.dtInputDate.Text = "08/2015";
+            this.dtInputDate.Text = "08-2015";
             this.dtInputDate.Value = new System.DateTime(2015, 8, 10, 11, 58, 20, 109);
             // 
             // label30
